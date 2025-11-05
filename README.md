@@ -85,17 +85,4 @@ Each page follows this pattern:
 - Try modifying colors, text, or layout to see what happens
 - Use browser DevTools (F12) to inspect and debug
 
-## Common Tasks
-
-### Change the API URL
-Edit `API_BASE_URL` in `js/api.js`
-
-### Add a new field to posts
-1. Add input in HTML forms
-2. Update JavaScript to include the new field in `postData`
-3. Update display logic to show the new field
-
-### Customize colors
-Edit CSS variables in `styles/main.css` under `:root`
-
 Happy coding! 🚀
