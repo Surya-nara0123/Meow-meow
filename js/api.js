@@ -8,8 +8,8 @@ async function getPosts() {
   return [
     {
       id: 1,
-      title: "Welcome to the Blog",
-      description: "This is the first post on our blog. We're excited to share our thoughts and ideas with you!",
+      title: "Meow Meow",
+      description: "I love buts and I cannot lie...The other brothers cannot lie...!",
       timestamp: "2024-11-01T10:00:00Z"
     },
     {
