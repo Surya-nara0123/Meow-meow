@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create a new post on MemeFeed">
+    <title>Create Post - MemeFeed</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="index.html" class="logo">MemeFeed</a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">Feed</a>
+            </li>
+            <li class="active">
+                <a href="create.html">Create Post</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="form-container">
+            <h1>Create New Post</h1>
+            
+            <!-- Error Message -->
+            <div id="error-message" class="error-message" style="display: none;" role="alert" aria-live="assertive"></div>
+            
+            <!-- Create Post Form -->
+            <form id="create-form">
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input 
+                        type="text" 
+                        id="title" 
+                        name="title" 
+                        class="form-input" 
+                        placeholder="Enter post title"
+                        required
+                        maxlength="200"
+                        aria-required="true"
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea 
+                        id="description" 
+                        name="description" 
+                        class="form-textarea" 
+                        placeholder="Enter post description" 
+                        rows="4"
+                        required
+                        maxlength="1000"
+                        aria-required="true"
+                    ></textarea>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="cancel-btn" id="cancel-btn">
+                        Cancel
+                    </button>
+                    <button type="submit" class="submit-btn">
+                        Create Post
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/create.js"></script>
+</body>
+</html>
